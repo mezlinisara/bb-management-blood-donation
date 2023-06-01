@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Homepage</title>
+   
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <header>
+    
+        <a  class="logo"><span>B</span>lood<span>B</span>ridge</a>  
+    
+    </header>
+         <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+    <form class="modal-content animate" action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="https://www.pngarts.com/files/11/Avatar-Transparent-Images.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="flame"><b>FullName :</b></label>
+          <input type="text" placeholder="Enter FullName" name="flname" required>
+      
+          <label for="psw"><b>Password :</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <label for="phnbr"><b>Phone number :</b></label>
+          <input type="tel" placeholder="Enter Phone number" name="phnbr" required>
+
+          <label for="eml"><b>Email :</b></label>
+          <input type="email" placeholder="Enter Email" name="eml" required>
+
+          <label for="gdr"><b>Gender :</b></label>
+          <select id="gender_donor" name="gender_donor" required>
+                                                       
+            <option value="wommen">Female</option>
+                <option value="Man">Male</option>
+             </select>
+            
+
+          <label for="city"><b>City :</b></label>
+          <select id="adress_donor" name="adress_donor" required>
+            <option value="23">Annaba</option>
+            <option value="ob">Oum El Bouaghi</option>
+           <option value="5">Batna</option>
+           <option value="11">Tebessa</option>
+           <option value="19">Setif</option>
+                                   
+           <option value="24">Guelma</option>
+          <option value="25">Constantine</option>
+           <option value="36">EL taref</option>
+            </select>
+        </select>
+
+        <label for="wru"><b>Who are you :</b></label>
+          <select id="w_r_u" name="w_r_u" required>
+                                                       
+            <option value="dnr">Donor</option>
+            <option value="skr">Seeker</option>
+            <option value="dctr">Doctor</option>
+            <option value="lt">Lab technician</option>
+            <option value="hsptl">Hospital</option>
+             </select>
+
+
+
+      
+          <a href="homepage.html"><button type="submit">Login</button></a>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel
+            </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    
+
+      
+      
+   
+</div>
